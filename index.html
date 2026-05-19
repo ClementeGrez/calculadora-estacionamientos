@@ -14,7 +14,6 @@
     --gold-dk:  #C98A18;
     --cyan:     #4FC3F7;
     --green:    #66BB6A;
-    --red:      #EF5350;
     --white:    #FFFFFF;
     --gray:     #B0BEC5;
     --gray-dk:  #607D8B;
@@ -29,17 +28,12 @@
     padding: 0 0 60px;
   }
 
-  /* TOP BAR */
-  .topbar {
-    display: flex;
-    height: 6px;
-  }
+  .topbar { display: flex; height: 6px; }
   .topbar span { flex: 1; }
   .topbar span:nth-child(1) { background: var(--gold); }
   .topbar span:nth-child(2) { background: var(--cyan); }
   .topbar span:nth-child(3) { background: var(--green); }
 
-  /* HEADER */
   header {
     background: var(--navy-mid);
     padding: 28px 40px 24px;
@@ -51,259 +45,113 @@
   .logo { display: flex; align-items: baseline; gap: 14px; }
   .logo-gps {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 52px;
-    font-weight: 800;
-    color: var(--gold);
-    letter-spacing: -1px;
-    line-height: 1;
+    font-size: 52px; font-weight: 800;
+    color: var(--gold); letter-spacing: -1px; line-height: 1;
   }
   .logo-sep { width: 2px; height: 40px; background: var(--navy-lt); }
   .logo-text { display: flex; flex-direction: column; gap: 2px; }
-  .logo-text strong {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 13px; font-weight: 700;
-    color: var(--white); letter-spacing: 2px;
-  }
+  .logo-text strong { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); letter-spacing: 2px; }
   .logo-text span { font-size: 11px; color: var(--gray); letter-spacing: 1px; }
   .header-badge {
-    background: var(--navy-lt);
-    border: 1px solid var(--gold);
-    border-radius: 4px;
-    padding: 6px 16px;
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    background: var(--navy-lt); border: 1px solid var(--gold); border-radius: 4px;
+    padding: 6px 16px; font-size: 11px; font-weight: 600; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase;
   }
 
-  /* MAIN */
   main { max-width: 1100px; margin: 0 auto; padding: 40px 24px 0; }
-
-  .page-title {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 32px; font-weight: 700;
-    color: var(--white);
-    margin-bottom: 4px;
-  }
+  .page-title { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
   .page-title span { color: var(--gold); }
-  .page-sub {
-    font-size: 12px; color: var(--gray);
-    letter-spacing: 2px; text-transform: uppercase;
-    margin-bottom: 32px;
-  }
+  .page-sub { font-size: 12px; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 32px; }
 
-  /* LAYOUT */
-  .layout {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 24px;
-    align-items: start;
-  }
+  .layout { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; }
 
-  /* PANEL INPUTS */
   .panel {
-    background: var(--navy-mid);
-    border: 1px solid var(--navy-lt);
-    border-radius: 8px;
-    padding: 28px 24px;
-    position: sticky;
-    top: 24px;
+    background: var(--navy-mid); border: 1px solid var(--navy-lt); border-radius: 8px;
+    padding: 28px 24px; position: sticky; top: 24px;
   }
   .panel-title {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 13px; font-weight: 700;
-    color: var(--gray);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--navy-lt);
+    font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
+    color: var(--gray); letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 22px; padding-bottom: 12px; border-bottom: 1px solid var(--navy-lt);
   }
   .field { margin-bottom: 20px; }
-  .field label {
-    display: block;
-    font-size: 11px; font-weight: 600;
-    color: var(--gray);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
+  .field label { display: block; font-size: 11px; font-weight: 600; color: var(--gray); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
   .field input, .field select {
-    width: 100%;
-    background: var(--navy-lt);
-    border: 1px solid #1E3A5F;
-    border-radius: 6px;
-    color: var(--white);
-    font-family: 'Barlow', sans-serif;
-    font-size: 15px;
-    padding: 10px 14px;
-    outline: none;
-    transition: border-color 0.2s;
-    -webkit-appearance: none;
+    width: 100%; background: var(--navy-lt); border: 1px solid #1E3A5F; border-radius: 6px;
+    color: var(--white); font-family: 'Barlow', sans-serif; font-size: 15px; padding: 10px 14px;
+    outline: none; transition: border-color 0.2s; -webkit-appearance: none;
   }
   .field input:focus, .field select:focus { border-color: var(--gold); }
-  .field select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B0BEC5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+  .field select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B0BEC5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+  }
   .field option { background: var(--navy-mid); }
 
   .btn-calc {
-    width: 100%;
-    background: var(--gold);
-    color: var(--navy);
-    border: none;
-    border-radius: 6px;
-    padding: 13px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
-    margin-top: 4px;
+    width: 100%; background: var(--gold); color: var(--navy); border: none; border-radius: 6px;
+    padding: 13px; font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700;
+    letter-spacing: 1px; cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 4px;
   }
   .btn-calc:hover { background: var(--gold-dk); }
   .btn-calc:active { transform: scale(0.98); }
 
   .btn-row { display: flex; gap: 8px; margin-top: 10px; }
   .btn-sec {
-    flex: 1;
-    background: transparent;
-    border: 1px solid #1E3A5F;
-    border-radius: 6px;
-    color: var(--gray);
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 9px;
-    cursor: pointer;
-    transition: border-color 0.2s, color 0.2s;
+    flex: 1; background: transparent; border: 1px solid #1E3A5F; border-radius: 6px;
+    color: var(--gray); font-family: 'Barlow', sans-serif; font-size: 12px; font-weight: 500;
+    padding: 9px; cursor: pointer; transition: border-color 0.2s, color 0.2s;
   }
   .btn-sec:hover { border-color: var(--gold); color: var(--gold); }
 
   .note {
-    margin-top: 20px;
-    font-size: 11px;
-    color: var(--gray-dk);
-    line-height: 1.6;
-    border-left: 2px solid var(--gold);
-    padding-left: 10px;
+    margin-top: 20px; font-size: 11px; color: var(--gray-dk); line-height: 1.6;
+    border-left: 2px solid var(--gold); padding-left: 10px;
   }
 
-  /* RESULTADOS */
   .results { display: flex; flex-direction: column; gap: 20px; }
 
-  /* CARDS RESUMEN */
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-  }
+  .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .stat-card {
-    background: var(--navy-mid);
-    border-radius: 8px;
-    padding: 18px 16px 16px;
-    border-top: 3px solid transparent;
-    transition: transform 0.2s;
+    background: var(--navy-mid); border-radius: 8px; padding: 18px 16px 16px;
+    border-top: 3px solid transparent; transition: transform 0.2s;
   }
   .stat-card:hover { transform: translateY(-2px); }
   .stat-card.gold { border-top-color: var(--gold); }
   .stat-card.cyan { border-top-color: var(--cyan); }
-  .stat-card.green { border-top-color: var(--green); }
   .stat-card.purple { border-top-color: #AB47BC; }
-  .stat-num {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px; font-weight: 700;
-    line-height: 1;
-    margin-bottom: 6px;
-  }
+  .stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; margin-bottom: 6px; }
   .stat-card.gold .stat-num { color: var(--gold); }
   .stat-card.cyan .stat-num { color: var(--cyan); }
-  .stat-card.green .stat-num { color: var(--green); }
   .stat-card.purple .stat-num { color: #AB47BC; }
   .stat-lbl { font-size: 11px; color: var(--gray); line-height: 1.3; }
 
-  /* TABLAS */
-  .table-section {
-    background: var(--navy-mid);
-    border: 1px solid var(--navy-lt);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .table-header {
-    padding: 18px 20px 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid var(--navy-lt);
-  }
-  .table-header h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 14px; font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-  }
+  .table-section { background: var(--navy-mid); border: 1px solid var(--navy-lt); border-radius: 8px; overflow: hidden; }
+  .table-header { padding: 18px 20px 14px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--navy-lt); }
+  .table-header h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
   .table-header h3.green { color: var(--green); }
   .table-header h3.cyan { color: var(--cyan); }
-  .badge {
-    font-size: 10px; font-weight: 600;
-    padding: 2px 9px;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
-  }
+  .badge { font-size: 10px; font-weight: 600; padding: 2px 9px; border-radius: 20px; letter-spacing: 0.5px; }
   .badge.green { background: rgba(102,187,106,0.12); color: var(--green); }
   .badge.cyan  { background: rgba(79,195,247,0.12); color: var(--cyan); }
 
   table { width: 100%; border-collapse: collapse; }
   thead th {
-    padding: 11px 16px;
-    font-size: 10px; font-weight: 700;
-    color: var(--gold);
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    text-align: left;
-    background: #0D1F33;
-    border-bottom: 1px solid var(--navy-lt);
+    padding: 11px 16px; font-size: 10px; font-weight: 700; color: var(--gold);
+    text-transform: uppercase; letter-spacing: 1.2px; text-align: left;
+    background: #0D1F33; border-bottom: 1px solid var(--navy-lt);
   }
   tbody tr { border-bottom: 1px solid #0D1F33; transition: background 0.15s; }
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: rgba(255,255,255,0.02); }
-  tbody td {
-    padding: 12px 16px;
-    font-size: 13px;
-    color: var(--white);
-    vertical-align: middle;
-  }
+  tbody td { padding: 12px 16px; font-size: 13px; color: var(--white); vertical-align: middle; }
   tbody td.num { color: var(--green); font-weight: 600; font-size: 14px; }
   tbody td.result { color: var(--gold); font-weight: 700; font-size: 15px; }
   tbody td.muted { color: var(--gray); font-size: 12px; }
 
-  /* PRECIO BOX */
-  .precio-box {
-    background: var(--navy-mid);
-    border: 1px solid var(--gold);
-    border-radius: 8px;
-    padding: 18px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .precio-box .lbl { font-size: 12px; color: var(--gray); font-weight: 500; }
-  .precio-box .val { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; }
-  .precio-box .val.gold { color: var(--gold); }
-  .precio-box .val.cyan { color: var(--cyan); }
-  .precio-sep { width: 1px; height: 40px; background: var(--navy-lt); }
-
-  /* FOOTER */
   footer {
-    background: var(--navy-mid);
-    border-top: 1px solid var(--navy-lt);
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 60px;
+    background: var(--navy-mid); border-top: 1px solid var(--navy-lt);
+    padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; margin-top: 60px;
   }
   footer p { font-size: 11px; color: var(--gray-dk); }
   footer strong { color: var(--gold); }
@@ -313,8 +161,6 @@
     .cards-grid { grid-template-columns: repeat(2, 1fr); }
     .panel { position: static; }
     header { padding: 20px; flex-direction: column; gap: 12px; align-items: flex-start; }
-    .precio-box { flex-direction: column; }
-    .precio-sep { width: 100%; height: 1px; }
     footer { flex-direction: column; gap: 8px; text-align: center; }
   }
 </style>
@@ -341,7 +187,6 @@
 
   <div class="layout">
 
-    <!-- INPUTS -->
     <div class="panel">
       <div class="panel-title">Datos de entrada</div>
 
@@ -384,22 +229,16 @@
       </div>
     </div>
 
-    <!-- RESULTADOS -->
     <div class="results">
 
-      <!-- Cards resumen -->
       <div class="cards-grid">
         <div class="stat-card gold">
           <div class="stat-num" id="c-estac">200</div>
           <div class="stat-lbl">Estacionamientos<br>requeridos</div>
         </div>
-        <div class="stat-card green">
+        <div class="stat-card cyan">
           <div class="stat-num" id="c-m2estac">28 m²</div>
           <div class="stat-lbl">m² por<br>estacionamiento</div>
-        </div>
-        <div class="stat-card cyan">
-          <div class="stat-num" id="c-total">5.600 m²</div>
-          <div class="stat-lbl">m² totales<br>requeridos</div>
         </div>
         <div class="stat-card purple">
           <div class="stat-num">5,00×2,50</div>
@@ -407,8 +246,7 @@
         </div>
       </div>
 
-      <!-- Tabla terreno -->
-      <div class="table-section" id="sec-terreno">
+      <div class="table-section">
         <div class="table-header">
           <h3 class="green">Terreno — Cabida física referencial</h3>
           <span class="badge green">2 categorías</span>
@@ -426,8 +264,7 @@
         </table>
       </div>
 
-      <!-- Tabla oficinas -->
-      <div class="table-section" id="sec-oficinas">
+      <div class="table-section">
         <div class="table-header">
           <h3 class="cyan">Edificio de oficinas — Ratio normativo</h3>
           <span class="badge cyan">3 categorías</span>
@@ -443,22 +280,6 @@
           </thead>
           <tbody id="tbody-oficina"></tbody>
         </table>
-      </div>
-
-      <!-- Precio referencial -->
-      <div class="precio-box">
-        <div>
-          <div class="lbl" id="precio-lbl">200 estacionamientos · zona oriente</div>
-        </div>
-        <div>
-          <div class="lbl">Precio venta referencial</div>
-          <div class="val gold" id="precio-venta">UF 12.000 – 30.000</div>
-        </div>
-        <div class="precio-sep"></div>
-        <div>
-          <div class="lbl">Arriendo mensual referencial</div>
-          <div class="val cyan" id="precio-arriendo">UF 500 – 1.000 / mes</div>
-        </div>
       </div>
 
     </div>
@@ -482,26 +303,19 @@ const oficina = [
 ];
 
 function fmt(n) { return Math.round(n).toLocaleString('es-CL'); }
-
 let lastData = null;
 
 function calcular() {
   const n = parseInt(document.getElementById('estac').value) || 200;
   const tipo = document.getElementById('tipo').value;
-  const comunaMap = { lascondes:'Las Condes', vitacura:'Vitacura', lobarnechea:'Lo Barnechea', providencia:'Providencia', nunoa:'Ñuñoa' };
-  const comuna = comunaMap[document.getElementById('comuna').value];
 
   document.getElementById('c-estac').textContent = n;
   document.getElementById('th-terreno').textContent = `m² para ${n} estac.`;
   document.getElementById('th-oficina').textContent = `m² oficina para ${n} estac.`;
 
-  // Card principal según tipo
   const m2ref = tipo === 'terreno' ? terreno[0].m2 : tipo === 'oficina' ? oficina[0].ratio : 20;
-  const totalRef = m2ref * n;
   document.getElementById('c-m2estac').textContent = m2ref + ' m²';
-  document.getElementById('c-total').textContent = fmt(totalRef) + ' m²';
 
-  // Tabla terreno
   document.getElementById('tbody-terreno').innerHTML = terreno.map(r => `
     <tr>
       <td>${r.mod}</td>
@@ -511,7 +325,6 @@ function calcular() {
     </tr>
   `).join('');
 
-  // Tabla oficinas
   document.getElementById('tbody-oficina').innerHTML = oficina.map(r => `
     <tr>
       <td>${r.cat}</td>
@@ -521,12 +334,7 @@ function calcular() {
     </tr>
   `).join('');
 
-  // Precio referencial
-  document.getElementById('precio-lbl').textContent = `${n} estacionamientos · zona oriente`;
-  document.getElementById('precio-venta').textContent = `UF ${fmt(n * 60)} – ${fmt(n * 150)}`;
-  document.getElementById('precio-arriendo').textContent = `UF ${fmt(n * 2.5)} – ${fmt(n * 5)} / mes`;
-
-  lastData = { n, comuna, tipo, terreno, oficina };
+  lastData = { n, tipo, terreno, oficina };
 }
 
 function copiarTabla() {
@@ -538,7 +346,7 @@ function copiarTabla() {
   txt += `\nEDIFICIO OFICINAS\nCategoría\tRatio\tm² para ${n} estac.\tReferencia\n`;
   oficina.forEach(r => { txt += `${r.cat}\t1c/${r.ratio}m²\t${r.ratio * n}\t${r.ref}\n`; });
   navigator.clipboard.writeText(txt).then(() => {
-    const btn = document.querySelector('.btn-sec');
+    const btn = document.querySelectorAll('.btn-sec')[0];
     const orig = btn.innerHTML;
     btn.innerHTML = '✓ Copiado';
     btn.style.color = 'var(--green)';
