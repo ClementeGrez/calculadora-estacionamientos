@@ -19,14 +19,7 @@
     --gray-dk:  #607D8B;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 16px; }
-  body {
-    background: var(--navy);
-    color: var(--white);
-    font-family: 'Barlow', sans-serif;
-    min-height: 100vh;
-    padding: 0 0 60px;
-  }
+  body { background: var(--navy); color: var(--white); font-family: 'Barlow', sans-serif; min-height: 100vh; padding: 0 0 60px; }
 
   .topbar { display: flex; height: 6px; }
   .topbar span { flex: 1; }
@@ -34,95 +27,50 @@
   .topbar span:nth-child(2) { background: var(--cyan); }
   .topbar span:nth-child(3) { background: var(--green); }
 
-  header {
-    background: var(--navy-mid);
-    padding: 28px 40px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--navy-lt);
-  }
+  header { background: var(--navy-mid); padding: 28px 40px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--navy-lt); }
   .logo { display: flex; align-items: baseline; gap: 14px; }
-  .logo-gps {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 52px; font-weight: 800;
-    color: var(--gold); letter-spacing: -1px; line-height: 1;
-  }
+  .logo-gps { font-family: 'Barlow Condensed', sans-serif; font-size: 52px; font-weight: 800; color: var(--gold); letter-spacing: -1px; line-height: 1; }
   .logo-sep { width: 2px; height: 40px; background: var(--navy-lt); }
   .logo-text { display: flex; flex-direction: column; gap: 2px; }
   .logo-text strong { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); letter-spacing: 2px; }
   .logo-text span { font-size: 11px; color: var(--gray); letter-spacing: 1px; }
-  .header-badge {
-    background: var(--navy-lt); border: 1px solid var(--gold); border-radius: 4px;
-    padding: 6px 16px; font-size: 11px; font-weight: 600; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase;
-  }
+  .header-badge { background: var(--navy-lt); border: 1px solid var(--gold); border-radius: 4px; padding: 6px 16px; font-size: 11px; font-weight: 600; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; }
 
   main { max-width: 1100px; margin: 0 auto; padding: 40px 24px 0; }
   .page-title { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
   .page-title span { color: var(--gold); }
   .page-sub { font-size: 12px; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 32px; }
 
-  .layout { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; }
+  .layout { display: grid; grid-template-columns: 260px 1fr; gap: 24px; align-items: start; }
 
-  .panel {
-    background: var(--navy-mid); border: 1px solid var(--navy-lt); border-radius: 8px;
-    padding: 28px 24px; position: sticky; top: 24px;
-  }
-  .panel-title {
-    font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
-    color: var(--gray); letter-spacing: 2px; text-transform: uppercase;
-    margin-bottom: 22px; padding-bottom: 12px; border-bottom: 1px solid var(--navy-lt);
-  }
+  .panel { background: var(--navy-mid); border: 1px solid var(--navy-lt); border-radius: 8px; padding: 28px 24px; position: sticky; top: 24px; }
+  .panel-title { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 22px; padding-bottom: 12px; border-bottom: 1px solid var(--navy-lt); }
   .field { margin-bottom: 20px; }
   .field label { display: block; font-size: 11px; font-weight: 600; color: var(--gray); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
-  .field input, .field select {
-    width: 100%; background: var(--navy-lt); border: 1px solid #1E3A5F; border-radius: 6px;
-    color: var(--white); font-family: 'Barlow', sans-serif; font-size: 15px; padding: 10px 14px;
-    outline: none; transition: border-color 0.2s; -webkit-appearance: none;
-  }
-  .field input:focus, .field select:focus { border-color: var(--gold); }
-  .field select {
-    cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B0BEC5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
-  }
-  .field option { background: var(--navy-mid); }
+  .field input { width: 100%; background: var(--navy-lt); border: 1px solid #1E3A5F; border-radius: 6px; color: var(--white); font-family: 'Barlow', sans-serif; font-size: 22px; font-weight: 600; padding: 14px; outline: none; transition: border-color 0.2s; text-align: center; }
+  .field input:focus { border-color: var(--gold); }
 
-  .btn-calc {
-    width: 100%; background: var(--gold); color: var(--navy); border: none; border-radius: 6px;
-    padding: 13px; font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700;
-    letter-spacing: 1px; cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 4px;
-  }
+  .btn-calc { width: 100%; background: var(--gold); color: var(--navy); border: none; border-radius: 6px; padding: 13px; font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 1px; cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 4px; }
   .btn-calc:hover { background: var(--gold-dk); }
   .btn-calc:active { transform: scale(0.98); }
 
   .btn-row { display: flex; gap: 8px; margin-top: 10px; }
-  .btn-sec {
-    flex: 1; background: transparent; border: 1px solid #1E3A5F; border-radius: 6px;
-    color: var(--gray); font-family: 'Barlow', sans-serif; font-size: 12px; font-weight: 500;
-    padding: 9px; cursor: pointer; transition: border-color 0.2s, color 0.2s;
-  }
+  .btn-sec { flex: 1; background: transparent; border: 1px solid #1E3A5F; border-radius: 6px; color: var(--gray); font-family: 'Barlow', sans-serif; font-size: 12px; font-weight: 500; padding: 9px; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
   .btn-sec:hover { border-color: var(--gold); color: var(--gold); }
 
-  .note {
-    margin-top: 20px; font-size: 11px; color: var(--gray-dk); line-height: 1.6;
-    border-left: 2px solid var(--gold); padding-left: 10px;
-  }
+  .note { margin-top: 20px; font-size: 11px; color: var(--gray-dk); line-height: 1.6; border-left: 2px solid var(--gold); padding-left: 10px; }
 
   .results { display: flex; flex-direction: column; gap: 20px; }
 
   .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .stat-card {
-    background: var(--navy-mid); border-radius: 8px; padding: 18px 16px 16px;
-    border-top: 3px solid transparent; transition: transform 0.2s;
-  }
+  .stat-card { background: var(--navy-mid); border-radius: 8px; padding: 18px 16px 16px; border-top: 3px solid transparent; transition: transform 0.2s; }
   .stat-card:hover { transform: translateY(-2px); }
   .stat-card.gold { border-top-color: var(--gold); }
-  .stat-card.cyan { border-top-color: var(--cyan); }
+  .stat-card.green { border-top-color: var(--green); }
   .stat-card.purple { border-top-color: #AB47BC; }
   .stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 700; line-height: 1; margin-bottom: 6px; }
   .stat-card.gold .stat-num { color: var(--gold); }
-  .stat-card.cyan .stat-num { color: var(--cyan); }
+  .stat-card.green .stat-num { color: var(--green); }
   .stat-card.purple .stat-num { color: #AB47BC; }
   .stat-lbl { font-size: 11px; color: var(--gray); line-height: 1.3; }
 
@@ -136,11 +84,7 @@
   .badge.cyan  { background: rgba(79,195,247,0.12); color: var(--cyan); }
 
   table { width: 100%; border-collapse: collapse; }
-  thead th {
-    padding: 11px 16px; font-size: 10px; font-weight: 700; color: var(--gold);
-    text-transform: uppercase; letter-spacing: 1.2px; text-align: left;
-    background: #0D1F33; border-bottom: 1px solid var(--navy-lt);
-  }
+  thead th { padding: 11px 16px; font-size: 10px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 1.2px; text-align: left; background: #0D1F33; border-bottom: 1px solid var(--navy-lt); }
   tbody tr { border-bottom: 1px solid #0D1F33; transition: background 0.15s; }
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: rgba(255,255,255,0.02); }
@@ -149,10 +93,7 @@
   tbody td.result { color: var(--gold); font-weight: 700; font-size: 15px; }
   tbody td.muted { color: var(--gray); font-size: 12px; }
 
-  footer {
-    background: var(--navy-mid); border-top: 1px solid var(--navy-lt);
-    padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; margin-top: 60px;
-  }
+  footer { background: var(--navy-mid); border-top: 1px solid var(--navy-lt); padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; margin-top: 60px; }
   footer p { font-size: 11px; color: var(--gray-dk); }
   footer strong { color: var(--gold); }
 
@@ -192,40 +133,20 @@
 
       <div class="field">
         <label>N° de estacionamientos requeridos</label>
-        <input type="number" id="estac" value="200" min="1" step="10">
-      </div>
-
-      <div class="field">
-        <label>Tipo de inmueble</label>
-        <select id="tipo">
-          <option value="terreno">Terreno (cabida física)</option>
-          <option value="oficina">Edificio de oficinas</option>
-          <option value="local">Local comercial</option>
-        </select>
-      </div>
-
-      <div class="field">
-        <label>Comuna</label>
-        <select id="comuna">
-          <option value="lascondes">Las Condes</option>
-          <option value="vitacura">Vitacura</option>
-          <option value="lobarnechea">Lo Barnechea</option>
-          <option value="providencia">Providencia</option>
-          <option value="nunoa">Ñuñoa</option>
-        </select>
+        <input type="number" id="estac" value="200" min="1" step="10" oninput="calcular()">
       </div>
 
       <button class="btn-calc" onclick="calcular()">Calcular</button>
 
       <div class="btn-row">
-        <button class="btn-sec" onclick="copiarTabla()">&#128203; Copiar tabla</button>
-        <button class="btn-sec" onclick="descargarCSV()">&#8659; Descargar CSV</button>
+        <button class="btn-sec" onclick="copiarTabla()">&#128203; Copiar</button>
+        <button class="btn-sec" onclick="descargarCSV()">&#8659; CSV</button>
       </div>
 
       <div class="note">
-        <strong style="color:var(--gold)">Terreno:</strong> cabida física referencial con factor de circulación, rampas y maniobra.<br><br>
-        <strong style="color:var(--cyan)">Oficinas / local:</strong> razón normativa/comercial por comuna.<br><br>
-        OGUC: dimensión mínima 5,00 × 2,50 m por cupo · Superficie mínima 12,5 m².
+        <strong style="color:var(--gold)">Terreno:</strong> cabida física referencial con factor de circulación, rampas y maniobra (OGUC).<br><br>
+        <strong style="color:var(--cyan)">Oficinas:</strong> ratio normativo según categoría de edificio en zona oriente.<br><br>
+        Dimensión mínima OGUC: 5,00 × 2,50 m por cupo.
       </div>
     </div>
 
@@ -236,13 +157,13 @@
           <div class="stat-num" id="c-estac">200</div>
           <div class="stat-lbl">Estacionamientos<br>requeridos</div>
         </div>
-        <div class="stat-card cyan">
-          <div class="stat-num" id="c-m2estac">28 m²</div>
-          <div class="stat-lbl">m² por<br>estacionamiento</div>
+        <div class="stat-card green">
+          <div class="stat-num" id="c-terreno-min">4.400 m²</div>
+          <div class="stat-lbl">m² terreno<br>mínimo (superficie)</div>
         </div>
         <div class="stat-card purple">
-          <div class="stat-num">5,00×2,50</div>
-          <div class="stat-lbl">Dimensión mínima<br>OGUC</div>
+          <div class="stat-num" id="c-oficina-min">5.000 m²</div>
+          <div class="stat-lbl">m² edificio<br>mínimo (premium)</div>
         </div>
       </div>
 
@@ -303,18 +224,17 @@ const oficina = [
 ];
 
 function fmt(n) { return Math.round(n).toLocaleString('es-CL'); }
-let lastData = null;
+let lastN = 200;
 
 function calcular() {
   const n = parseInt(document.getElementById('estac').value) || 200;
-  const tipo = document.getElementById('tipo').value;
+  lastN = n;
 
   document.getElementById('c-estac').textContent = n;
   document.getElementById('th-terreno').textContent = `m² para ${n} estac.`;
   document.getElementById('th-oficina').textContent = `m² oficina para ${n} estac.`;
-
-  const m2ref = tipo === 'terreno' ? terreno[0].m2 : tipo === 'oficina' ? oficina[0].ratio : 20;
-  document.getElementById('c-m2estac').textContent = m2ref + ' m²';
+  document.getElementById('c-terreno-min').textContent = fmt(terreno[1].m2 * n) + ' m²';
+  document.getElementById('c-oficina-min').textContent = fmt(oficina[0].ratio * n) + ' m²';
 
   document.getElementById('tbody-terreno').innerHTML = terreno.map(r => `
     <tr>
@@ -333,13 +253,10 @@ function calcular() {
       <td class="muted">${r.ref}</td>
     </tr>
   `).join('');
-
-  lastData = { n, tipo, terreno, oficina };
 }
 
 function copiarTabla() {
-  if (!lastData) return;
-  const { n } = lastData;
+  const n = lastN;
   let txt = `CALCULADORA GPS · ESTACIONAMIENTOS\nN° requeridos: ${n}\n\n`;
   txt += `TERRENO\nModalidad\tm²/estac.\tm² para ${n} estac.\tObservación\n`;
   terreno.forEach(r => { txt += `${r.mod}\t${r.m2}\t${r.m2 * n}\t${r.obs}\n`; });
@@ -355,8 +272,7 @@ function copiarTabla() {
 }
 
 function descargarCSV() {
-  if (!lastData) return;
-  const { n } = lastData;
+  const n = lastN;
   let csv = `"CALCULADORA GPS PROPERTY","","",""\n"N° estacionamientos requeridos",${n},"",""\n\n`;
   csv += `"TERRENO","","",""\n"Modalidad","m²/estac.","m² para ${n} estac.","Observación"\n`;
   terreno.forEach(r => { csv += `"${r.mod}",${r.m2},${r.m2 * n},"${r.obs}"\n`; });
